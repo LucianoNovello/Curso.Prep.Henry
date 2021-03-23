@@ -213,13 +213,39 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  let i ; 
+  let newArray=[];
+  for(i = 0; i<array.length;i++){
+    if ((array[i] === "Enero")||(array[i]==="Marzo")||(array[i]==="Noviembre")){
+      newArray.push(array[i]);
+    }
+  }
+    if(newArray.length === 3){
+      return newArray;      
+}else{
+  return "No se encontraron los meses pedidos";
 }
+
+}
+
+
+
+  
+
 
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  let i ;
+  let newArray=[];
+  for (i= 0; i<array.length;i++){
+    if(array[i]>100){
+      newArray.push(array[i]);
+    }
+  }
+  return newArray;
 }
 
 
@@ -228,10 +254,30 @@ function breakStatement(numero) {
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
   //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
-  //devolver: "Se interrumpió la ejecución"
+  //devolver: 
   //Pista: usá el statement 'break'
   // Tu código:
-}
+  let i = 0;
+  let newArray=[];
+  while(i < 10){
+    numero=numero+2;
+    i++;
+    newArray.push(numero);
+    
+  if(i === numero){
+  break;
+
+    
+    }
+  
+  }
+  if(i === numero){
+    return "Se interrumpió la ejecución";
+  }
+return newArray;
+  }
+
+
 
 
 function continueStatement(numero) {
@@ -241,9 +287,22 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+
+let i = 0;
+let newArray=[];
+while( i<10){
+  if( i === 5){
+    i++;
+    continue;
+  }
+  numero= numero +2;
+  i++;
+  newArray.push(numero);
+  
+
 }
-
-
+return newArray;
+}
 // No modificar nada debajo de esta línea
 // --------------------------------
 
