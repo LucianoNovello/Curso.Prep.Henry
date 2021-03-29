@@ -208,9 +208,9 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  var array = [];   
+  let array = [];   
   for ( var i = 0; i <= 10; i++){
-    var a = i*6;
+    let a = i*6;
     array.push(a);
   }
   return array;
