@@ -1,0 +1,53 @@
+body{
+    background-image: url(../img/fondo7.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divclass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+
+}
+#thirdDiv{
+    
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    background-color: black;
+    border: 5px solid brown;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ 
+}
+
+h1{
+    color:springgreen;
+    
+
+}
+.hDif{
+    color:springgreen;
+    
+}
+.img{
+    width:400px;
+    
+   
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+    color:springgreen;
+    
+   
+}
